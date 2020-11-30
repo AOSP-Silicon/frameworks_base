@@ -554,4 +554,14 @@
        recharge when the battery level is lower than a threshold. Set this so that the device
        will be charged between (limit - val) and limit. -->
   <integer name="config_chargingControlBatteryRechargeMargin">10</integer>
+
+  <!-- Default FOD pressed color:
+           0 - cyan
+           1 - white
+           2 - white new
+           3 - green
+           4 - yellow
+           5 - light yellow
+  -->
+  <integer name="config_udfps_pressed_color">0</integer>
 </resources>
