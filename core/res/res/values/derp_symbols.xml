@@ -307,4 +307,7 @@
   <!-- Define device configs on boot -->
   <java-symbol type="array" name="global_device_configs_override" />
   <java-symbol type="array" name="device_configs_override" />
+
+  <!-- Default UDFPS pressed icon -->
+  <java-symbol type="integer" name="config_udfps_pressed_color" />
 </resources>
