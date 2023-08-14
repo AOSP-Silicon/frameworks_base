@@ -120,6 +120,15 @@ public class derpUtils {
         }
     }
 
+    public static boolean isPackageEnabled(Context context, String packageName) {
+        try {
+            PackageInfo pi = context.getPackageManager().getPackageInfo(packageName, 0);
+            return pi.applicationInfo.enabled;
+        } catch (PackageManager.NameNotFoundException notFound) {
+            return false;
+        }
+    }
+
     public static List<String> launchablePackages(Context context) {
         List<String> list = new ArrayList<>();
 
